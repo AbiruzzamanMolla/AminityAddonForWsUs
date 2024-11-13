@@ -1,0 +1,31 @@
+{
+    "name": "nwidart/aminity",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Aminity\\": "",
+            "Modules\\Aminity\\App\\": "app/",
+            "Modules\\Aminity\\Database\\Factories\\": "database/factories/",
+            "Modules\\Aminity\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Modules\\Aminity\\Tests\\": "tests/"
+        }
+    }
+}
