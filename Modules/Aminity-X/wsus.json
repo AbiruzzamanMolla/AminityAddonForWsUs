@@ -1,0 +1,48 @@
+{
+    "name": "Aminity Addon",
+    "is_default": false,
+    "description": "This is Aminity Addon",
+    "author": {
+        "name": "WebSolutionsUs",
+        "email": "websolutionus1@gmail.com",
+        "website": "https://websolutionus.com"
+    },
+    "license": "Proprietary",
+    "isPaid": false,
+    "url": "",
+    "options" : {
+        "setting_route" : "",
+        "assets": {
+            "css": [
+                {
+                    "path": "/resources/assets/css/style-aminity.css",
+                    "pasteTo": "/backend/css/"
+                }
+            ],
+            "js": [
+                {
+                    "path": "/resources/assets/js/aminity-script.js",
+                    "pasteTo": "/backend/js/"
+                }
+            ]
+        },
+        "translate" : true,
+        "translate_models" : [
+            "Modules\\Aminity\\app\\Models\\AminityTranslation"
+        ],
+        "role_permission" : {
+            "group_name": "listing aminity",
+            "permissions": [
+                    "listing.aminity.view",
+                    "listing.aminity.create",
+                    "listing.aminity.translate",
+                    "listing.aminity.store",
+                    "listing.aminity.edit",
+                    "listing.aminity.update",
+                    "listing.aminity.delete"
+                ]
+            }
+        },
+    "last_update": "2024-11-13",
+    "version": "1.0.0"
+}
